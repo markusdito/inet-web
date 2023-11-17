@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 75px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.super-container{
+    background-color: rgb(99, 150, 157);
+    max-width: 576px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 576px;
+    justify-content: end;
+    background-color: lightblue;
+    align-items: center;
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+    transition: .5s;
+    z-index: 2;
+}
+
+.navbar-container.edge-straight{
+    border-radius: 0 ;
+    transition: 0.5s;
+}
+
+.hamburger-menu-container {
+    margin: 20px;
+}
+
+
+.navbar-list {
+    position: absolute;
+    top: -1000px;
+    width: 576px;
+    left: 0;
+    transition: 1.5s;
+
+}
+
+.navbar-list.active {
+    background-color: #bcdaa2;
+    display: inline;
+    top: 60px;
+    transition: 0.5s;
+    border-radius: 0 0 15px 15px;
+}
+
+.navbar-list li {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.navbar-list ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-list a:visited,
+.navbar-list a:link,
+.navbar-list a:active{
+    text-decoration: underline solid transparent;
+    color: black;
+    transition: text-decoration .2s ease;
+}
+
+.navbar-list a:hover{
+    text-decoration: underline solid;
+}
+
+.content-container {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-title {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-page {
+    list-style-type: none;
+}
+
+.card {
+    width: 80%;
+    background-color: rgba(241, 239, 239, 0.56);
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 8px 8px 10px rgba(33, 30, 30, 0.256);
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 6px 0;
+}
+
